@@ -28,6 +28,7 @@ def name(text):
 
 
 def buscar(window, logradouro, bairro, localidade, uf, ddd):
+    """Preenche os campos com os dados encontrados, habilitando o botão Salvar"""
     window['-LOGRADOURO-'].update(logradouro)
     window['-BAIRRO-'].update(bairro)
     window['-LOCALIDADE-'].update(localidade)
@@ -38,6 +39,7 @@ def buscar(window, logradouro, bairro, localidade, uf, ddd):
 
 
 def salvar(window):
+    """Salva os dados, limpando o CEP válido, desabilidando o botão Salvar"""
     window['-STATUS-'].update('Endereço salvo com sucesso!', text_color='#00FF00')
     window['-CEP-'].update('')
     window['-CEP-'].set_focus()
