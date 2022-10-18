@@ -39,7 +39,7 @@ def buscar(window, logradouro, bairro, localidade, uf, ddd):
 
 
 def salvar(window):
-    """Salva os dados, limpando o CEP válido, desabilidando o botão Salvar"""
+    """Salva os dados, limpando o CEP válido, desabilitando o botão Salvar"""
     window['-STATUS-'].update('Endereço salvo com sucesso!', text_color='#00FF00')
     window['-CEP-'].update('')
     window['-CEP-'].set_focus()
